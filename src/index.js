@@ -21,7 +21,7 @@ app.get('/tables', async(req, res) => {
             text: 'CREATE TABLE IF NOT EXISTS tasks(taskID SERIAL,accID text,task text,status boolean,CONSTRAINT tasks_pkey PRIMARY KEY (taskID))'
         }
         const psQuery2 = {
-            name: 'CreateTasksTableQuery',
+            name: 'CreateUsersTableQuery',
             text: 'CREATE TABLE IF NOT EXISTS users(accID SERIAL,username text,password text,CONSTRAINT users_pkey PRIMARY KEY (accID))'
         }
     

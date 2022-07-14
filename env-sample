@@ -1,0 +1,9 @@
+DATABASE_URL=test
+ENVIRONMENT=development
+JWT_SECRET=JWT1234
+
+PG_USER=root
+PG_HOST=localhost
+PG_DB=todo
+PG_PASSWORD=root
+PG_PORT=5432

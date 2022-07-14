@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  postgresdb:
+    image: postgres:latest
+    container_name: postgresdb
+    restart: always
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=todo
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./seed/seeder.sql:/docker-entrypoint-initdb.d/seeder.sql

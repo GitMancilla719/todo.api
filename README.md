@@ -9,7 +9,7 @@
 
 ## USER ENDPOINTS
 ```
-Endpoint: {{base url}}/account/register
+Endpoint: https://todo-api-protoproject.herokuapp.com/account/register
 Method: POST
 Authorization: n/a
 Body: username, password
@@ -17,7 +17,7 @@ Parameters: n/a
 Description: Used for User registration
 ```
 ```
-Endpoint: {{base url}}/account/login
+Endpoint: https://todo-api-protoproject.herokuapp.com/account/login
 Method: POST
 Authorization: n/a
 Body: username, password
@@ -25,7 +25,7 @@ Parameters: n/a
 Description: Used for User login, returns an access token (copy this token for later)
 ```
 ```
-Endpoint: {{base url}}/account/update
+Endpoint: https://todo-api-protoproject.herokuapp.com/account/update
 Method: PUT
 Authorization: Bearer token
 Body: username, oldPassword, password, confirmPassword
@@ -33,7 +33,7 @@ Parameters: n/a
 Description: Used for updating user's info
 ```
 ```
-Endpoint: {{base url}}/account/delete
+Endpoint: https://todo-api-protoproject.herokuapp.com/account/delete
 Method: DELETE
 Authorization: Bearer token
 Body: n/a
@@ -42,21 +42,21 @@ Description: Used for HARD deleting the user's account
 ```
 ## TASKS ENDPOINTS
 ```
-Endpoint: {{base url}}/tasks/mytasks
+Endpoint: https://todo-api-protoproject.herokuapp.com/tasks/mytasks
 Method: GET
 Authorization: Bearer token
 Body: n/a
 Description: Used for retrieving user's tasks
 ```
 ```
-Endpoint: {{base url}}/tasks/add
+Endpoint: https://todo-api-protoproject.herokuapp.com/tasks/add
 Method: POST
 Authorization: Bearer token
 Body: task
 Description: Used for adding tasks to user's list
 ```
 ```
-Endpoint: {{base url}}/tasks/update?taskid={{taskid}}
+Endpoint: https://todo-api-protoproject.herokuapp.com/tasks/update?taskid={{taskid}}
 Method: PUT
 Authorization: Bearer token
 Body: task
@@ -64,7 +64,7 @@ Parameters: taskid
 Description: Used for editing tasks to user's list
 ```
 ```
-Endpoint: {{base url}}/tasks/delete?taskid={{taskid}}
+Endpoint: https://todo-api-protoproject.herokuapp.com/tasks/delete?taskid={{taskid}}
 Method: DELETE
 Authorization: Bearer token
 Body: n/a
@@ -72,12 +72,12 @@ Parameters: taskid
 Description: Used for HARD deleting tasks from user's list
 ```
 ```
-Endpoint: {{base url}}/tasks/toggleStatus?taskid={{taskid}}
+Endpoint: https://todo-api-protoproject.herokuapp.com/tasks/toggleStatus?taskid={{taskid}}
 Method: PATCH
 Authorization: Bearer token
 Body: n/a
 Parameters: taskid
-Description: Used for toggling status of the specified task 
+Description: Used for toggling status of the specified task (completed or active)
 ```
 
 

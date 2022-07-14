@@ -35,7 +35,6 @@ const login = async (req,res) => {
             token: access_token
         })
     } catch (error) {
-        console.log(error)
         return res.status(500).json({ error: String(error) })   
     }
 }
